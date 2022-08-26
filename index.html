@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JIWON PORTFOLIO</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main_menu.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="//unpkg.com/splitting/splitting.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/splitting@1.0.0/dist/splitting.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 </head>
+
 <body>
     <div id="loader" class="hidden_loader">
         <div class="loader_wrap">
@@ -25,10 +34,28 @@
     </div>
 
     <div id="main">
-        <h1>JIWON</h1>
+        <div id="left_nav"></div>
+        <div id="main_content"></div>
+        <div id="main_tab">
+            <nav>
+                <a href="#" class="tab_link">
+                    <span class="tab_link_Text" data-splitting>ABOUT</span>
+                    <span class="tab_link_Text" data-splitting>ABOUT</span>
+                </a>
+                <a href="#" class="tab_link">
+                    <span class="tab_link_Text" data-splitting>PROJECT</span>
+                    <span class="tab_link_Text" data-splitting>PROJECT</span>
+                </a>
+                <a href="#" class="tab_link">
+                    <span class="tab_link_Text" data-splitting>CONTACT</span>
+                    <span class="tab_link_Text" data-splitting>CONTACT</span>
+                </a>
+            </nav>
+        </div>
     </div>
 
     <!-- 로딩 애니메이션 -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

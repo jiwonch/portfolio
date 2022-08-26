@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+:root {
+  font-size: 16px;
+  --link-translate-x: 3rem;
+}
+
+#main a {
+  text-decoration: none;
+}
+#main a:focus {
+  outline: none;
+  border: none;
+}
+
+.tab {
+  padding-top: 200px;
+}
+.tab_link {
+  font-size: 10rem;
+  color: #333;
+  display: grid;
+  font-style: italic;
+}
+.tab_link_Text {
+  grid-area: 1/1;
+  transition: opacity 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95), transform 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.tab_link_Text .word {
+  white-space: nowrap;
+}
+.tab_link_Text .char {
+  display: inline-block;
+  transform-origin: 50% 50% 0.4em;
+  transition: transform 0.5s cubic-bezier(0.5, 0, 0, 1);
+  transition-delay: calc(0ms + var(--char-index) * 25ms);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  margin: 0 -0.02em;
+}
+.tab_link_Text:nth-child(1) {
+  font-family: "Playfair Display";
+  font-weight: 500;
+}
+.tab_link_Text:nth-child(2) {
+  font-family: "Roboto";
+  font-weight: 500;
+  opacity: 0;
+}
+.tab_link_Text:nth-child(2) .char {
+  transform: rotate3d(1, -0.5, 0, 90deg);
+}
+.tab_link:hover .tab_link_Text {
+  transform: translateX(var(--link-translate-x));
+}
+.tab_link:hover .tab_link_Text:nth-child(1) {
+  opacity: 0;
+}
+.tab_link:hover .tab_link_Text:nth-child(1) .char {
+  transform: rotate3d(1, 0.3, 0, -90deg);
+}
+.tab_link:hover .tab_link_Text:nth-child(2) {
+  opacity: 1;
+}
+.tab_link:hover .tab_link_Text:nth-child(2) .char {
+  transform: rotate3d(0, 0, 0, 90deg);
+}

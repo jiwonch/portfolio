@@ -98,10 +98,10 @@ table {
 }
 
 .enter_button:hover {
-    -webkit-animation: play 0.75s ease-in infinite;
+    animation: play 0.75s ease-in infinite;
 }
 
-@-webkit-keyframes play {
+@keyframes play {
     0% {
         background-position: 0px;
     }
@@ -162,9 +162,31 @@ table {
 /* 실제 content */
 #main {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
     font-weight: lighter;
     font-size: 40px;
+    background-color: #eee7e1;
+    display: flex;
+}
+
+#left_nav{
+    height: 100%;
+    width: 5%;
+    border: 1px solid red;
+    /* background-color: red; */
+}
+
+#main_content{
+    height: 100%;
+    width: 30%;
+    border: 1px solid blue;
+    /* background-color: blue; */
+}
+
+#main_tab{
+    height: 100%;
+    width: 65%;
+    border: 1px solid purple;
+    /* background-color: purple; */
 }
