@@ -13,6 +13,7 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
+    scroll-behavior:smooth;
 }
 
 body {
@@ -87,7 +88,7 @@ table {
     color: #fff;
     opacity: 1;
     transition: all 1s ease 3s;
-    width: 200px;
+    width: 500px;
     height: 50px;
     line-height: 50px;
     background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
@@ -161,7 +162,7 @@ table {
 
 /* 실제 content */
 #main {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 100%;
     font-weight: lighter;
@@ -174,19 +175,47 @@ table {
     height: 100%;
     width: 5%;
     border: 1px solid red;
-    /* background-color: red; */
 }
 
 #main_content{
     height: 100%;
-    width: 30%;
-    border: 1px solid blue;
-    /* background-color: blue; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+#main_1{
+    width: 100%;
+    height: 60%;
+    border: 1px solid yellow;
+}
+
+#main_2{
+    width: 100%;
+    height: 40%;
+    border: 1px solid green;
+}
+
+#main_2 h3{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 50px;
+    letter-spacing: 0.2em;
+}
+
+#main_2 p{
+    font-size: 20px;
+    padding-left: 50px;
 }
 
 #main_tab{
     height: 100%;
-    width: 65%;
-    border: 1px solid purple;
-    /* background-color: purple; */
+    width: 55%;
+    overflow: hidden;
+}
+
+#contact{
+    width: 100%;
+    height: 100%;
+    background-color: #eee7e1;
 }

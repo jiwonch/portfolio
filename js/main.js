@@ -70,3 +70,7 @@ function updateGradient() {
 }
 
 setInterval(updateGradient, 8);
+
+
+// main menu
+Splitting();

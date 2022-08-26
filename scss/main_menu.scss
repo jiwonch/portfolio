@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Magra&display=swap');
 
 :root {
 	font-size: 16px;
@@ -16,13 +19,17 @@
 	}
 }
 
+#main_tab{
+    padding-top: 7%;
+}
+
 .tab {
-    padding-top: 200px;
 	&_link {
-		font-size: 10rem;
+		font-size: 9rem;
 		color: #333;
 		display: grid;
 		font-style: italic;
+        margin: 3px;
 
 		&_Text {
 			grid-area: 1/1;
@@ -37,18 +44,23 @@
 				transition: transform 0.5s cubic-bezier(0.5, 0, 0, 1);
 				transition-delay: calc(0ms + var(--char-index) * 25ms);
 				backface-visibility: hidden;
-				margin: 0 -0.02em;
+				margin: 0 -0.01em;
 			}
 		}
 
 		&_Text:nth-child(1) {
-			font-family: "Playfair Display";
+			// font-family: 'Luxurious Roman', cursive;
+            // font-family: 'Merienda', cursive;
+            font-family: 'El Messiri', sans-serif;
 			font-weight: 500;
 		}
 		&_Text:nth-child(2) {
-			font-family: "Roboto";
+			// font-family: "Roboto";
+            // font-family: 'Magra', sans-serif;
+            font-family: 'El Messiri', sans-serif;
 			font-weight: 500;
 			opacity: 0;
+            color: #fff;
 			.char {
 				transform: rotate3d(1, -0.5, 0, 90deg);
 				// OR
