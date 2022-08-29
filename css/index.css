@@ -244,7 +244,7 @@ table {
     text-align: center;
     /* font-family: 'Abril Fatface', cursive; */
     font-family: 'Courgette', cursive;
-    margin-top: -100px;
+    margin-top: -50px;
 }
 
 #contact_content h2{
@@ -358,16 +358,20 @@ table {
 #home_ct{
     position: absolute;
     top: 5%;
-    left: 5%;
-    border: 1px solid red;
+    left: 1%;
     width: 150px;
     height: 150px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
 #home_ct a{
-    color: #fff;
-    font-size: 40px;
+    color:#616060;
+    font-size: 20px;
+    transform: rotate(-90deg);
+}
+
+#home_ct a:hover{
+    color:#fff;
 }
