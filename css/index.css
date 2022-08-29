@@ -1,5 +1,6 @@
 @charset "utf-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 /* reset */
 * {
@@ -179,7 +180,7 @@ table {
 
 #main_content{
     height: 100%;
-    width: 45%;
+    width: 47%;
     display: flex;
     flex-direction: column;
 }
@@ -187,42 +188,17 @@ table {
 #main_1{
     width: 100%;
     height: 50%;
-    border: 1px solid yellow;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 22px;
-}
-
-.word{
-    position: relative;
-    z-index: 1;
-}
-
-.word::before{
-    content: '';
-    background-color: radial-gradient(circle at 40% 20%, #fcfcfc 0%, #ddd 10%, #333 50%, black 70%);
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-40%, -35%);
-    filter: blur(0.5px);
-}
-
-#main_1 span {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
+    user-select: none;
 }
 
 #main_2{
     width: 100%;
     height: 45%;
+    padding-left: 10%;
 }
 
 #main_2 h3{
@@ -240,7 +216,7 @@ table {
 
 #main_tab{
     height: 100%;
-    width: 55%;
+    width: 48%;
     overflow: hidden;
 }
 
@@ -248,4 +224,149 @@ table {
     width: 100%;
     height: 100%;
     background-color: #383838;
+    display: flex;
+}
+
+#contact_content{
+    width: 65%;
+    height: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#contact_content h1{
+    color: #fff;
+    font-size: 200px;
+    text-align: center;
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Courgette', cursive;
+    margin-top: -100px;
+}
+
+#contact_content h2{
+    font-size: 100px;
+    color: #fff;
+    text-align: center;
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Courgette', cursive;
+}
+
+#sns{
+    width: 70%;
+    height: 200px;
+    border: 1px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hex_wrap{
+    margin:  auto;
+    display: flex;
+    text-align: initial;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+}
+
+.hex{
+    position: relative;
+    width: 46%;
+    height: 80%;
+    margin: auto;
+    color: white;
+    background: linear-gradient(-180deg, white, #fda3b2);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.hex i {
+    z-index: 1;
+    margin: auto;
+    font-size: 40px;
+    color: transparent;
+    background: linear-gradient(45deg, #a58fe9, #e37682);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.hex::before, .hex::after{
+    position: absolute;
+    content: '';
+    background: inherit;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.hex::before{
+    transform: rotateZ(60deg);
+}
+
+.hex::after{
+    transform: rotateZ(-60deg);
+}
+
+.hex:hover{
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.hex:hover::before{
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.hex:hover::after{
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+#contact_myimg_home{
+    width: 35%;
+    height: 100%;
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#my_photo{
+    width: 70%;
+    height: 70%;
+    border: 1px solid blue;
+    border-radius: 50%;
+}
+
+#contact_myimg_home h3{
+    font-family: 'Courgette', cursive;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+#home_ct{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border: 1px solid red;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home_ct a{
+    color: #fff;
+    font-size: 40px;
 }

@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Magra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap");
 :root {
   font-size: 16px;
   --link-translate-x: 3rem;
@@ -71,4 +72,35 @@
 }
 .tab_link:hover .tab_link_Text:nth-child(2) .char {
   transform: rotate3d(0, 0, 0, 90deg);
+}
+
+#main_1 .word {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+#main_1 .word::before {
+  content: "";
+  background: radial-gradient(circle at 40% 20%, #fcfcfc 0%, #ddd 10%, #333 50%, #383838 70%);
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-40%, -35%);
+  filter: blur(0.7px);
+}
+
+#main_1 span {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Titillium Web", sans-serif;
 }
