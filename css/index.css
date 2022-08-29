@@ -263,7 +263,8 @@ table {
     flex-wrap: wrap;
 }
 
-.hex_wrap{
+.hex_wrap, #sns a{
+    display: block;
     margin:  auto;
     display: flex;
     text-align: initial;
