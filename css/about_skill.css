@@ -154,10 +154,14 @@ table {
 }
 
 #photo_img{
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 460px;
     border-radius: 50%;
     border: 5px solid blue;
+    overflow: hidden;
+    /* background-image: url(../img/choijiwon.jpg);
+    background-position: top center;
+    background-size: cover; */
 }
 
 #about_text{
@@ -226,9 +230,39 @@ table {
     margin-top: 8px;
 }
 
+#certification{
+    width: 700px;
+    height: 330px;
+    border: 5px solid #fff;
+    border-radius: 40px;
+    background-color: #fff;
+    margin: 40px auto 0;
+    padding: 5px 30px 5px 30px;
+}
+
+#certification h1{
+    font-size: 40px;
+    font-family: 'SDMiSaeng';
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#certification hr{
+    border-bottom: 2px solid #383838;
+    margin-bottom: 30px;
+}
+
+#certification h3 {
+    font-family: 'LeferiBaseType-RegularA';
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
 #skill {
     width: 100%;
-    height: 1500px;
+    height: 1700px;
     background: linear-gradient(to bottom, #484848, #383838);
     border: 1px solid #fff;
 }
@@ -240,6 +274,37 @@ table {
     font-weight: bold;
     margin-top: 50px;
     color: #fff;
+}
+
+#skill_bundle{
+    width: 1600px;
+    height: 85%;
+    margin: 30px auto 0;
+    border: 1px solid purple;
+}
+
+#front {
+    width: 100%;
+    height: 25%;
+    border: 1px solid yellow;
+}
+
+#back{
+    width: 100%;
+    height: 35%;
+    border: 1px solid blue;
+}
+
+#etc {
+    width: 100%;
+    height: 30%;
+    border: 1px solid red;
+}
+
+#tool {
+    width: 100%;
+    height: 10%;
+    border: 1px solid white;
 }
 
 #gotab{
