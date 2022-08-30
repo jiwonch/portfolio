@@ -1,6 +1,18 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@font-face {
+    font-family: 'SDMiSaeng';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDMiSaeng.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
 
 /* reset */
 * {
@@ -74,7 +86,7 @@ table {
     font-size: 7.5em;
     color: #fff;
     opacity: 1;
-    transition: all 3s ease;
+    transition: all 1s ease;
     font-weight: bold;
 }
 
@@ -88,7 +100,7 @@ table {
     font-size: 2em;
     color: #fff;
     opacity: 1;
-    transition: all 1s ease 3s;
+    transition: all 1s ease 0.5s;
     width: 500px;
     height: 50px;
     line-height: 50px;
@@ -175,7 +187,60 @@ table {
 #left_nav{
     height: 100%;
     width: 5%;
-    border: 1px solid red;
+}
+
+#code {
+    width: 100%;
+    height: 60%;
+}
+
+#dev {
+    width: 400px;
+    height: 94px;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: left top;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+#git {
+    display: inline;
+}
+
+#git a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #616060;
+}
+
+#tistory {
+    display: inline;
+}
+
+#tistory a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #616060;
+}
+
+#dev a:hover{
+    color: #fff;
+}
+
+#copyright{
+    width: 100%;
+    height: 40%;
+}
+
+#copyright p {
+    height: 5px;
+    width: 130px;
+    font-size: 15px;
+    font-weight: bold;
+    transform: rotate(-90deg);
+    margin-top: 200px;
+    color: #616060;
 }
 
 #main_content{
@@ -204,14 +269,34 @@ table {
 #main_2 h3{
     font-size: 1.3rem;
     font-weight: bold;
-    padding: 50px;
+    padding: 30px 50px 30px 50px;
     letter-spacing: 0.2em;
+    font-family: 'EliceDigitalBaeum_Bold';
 }
 
 #main_2 p{
-    font-size: 1rem;
+    font-size: 1.7rem;
     padding-left: 50px;
     line-height: 170%;
+    font-family: 'SDMiSaeng';
+    border-right: 1px solid rgba(255, 255, 255, 0);
+    display: inline-block;
+}
+
+#main_2 p.csor{
+    animation: csorr 0.4s infinite;
+}
+
+@keyframes csorr {
+    0%{
+        border-right: 1px solid #fff;
+    }
+    50%{
+        border-right: 1px solid #000;
+    }
+    100%{
+        border-right: 1px solid #fff;
+    }
 }
 
 #main_tab{
