@@ -118,24 +118,25 @@ table {
     white-space: nowrap;
     top: 0;
     left: 0;
-    animation: move 5s infinite;
-    animation-delay: 5s;
+    animation: move infinite;
+    /* animation-delay: 5s; */
+    animation-duration: 3s;
 }
 
 @keyframes move{
-    0%{
+    0%, 75%{
         top: 0px;
     }
-    20%{
+    15%{
         top: -62px;
     }
-    40%{
+    30%{
         top: -124px;
     }
-    60%{
+    45%{
         top: -186px;
     }
-    80%{
+    60%{
         top: -248px;
     }
 }
