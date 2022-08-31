@@ -59,19 +59,37 @@ table {
 
 
 /* contents */
+.scroll_progress {
+    position: fixed;
+    top:0;
+    left:0;
+    height:10px;
+    background-color: #a38678;
+    z-index: 2;
+  }
+  
+.scroll_progress p {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+}
+
 #aboutme {
     width: 100%;
     height: 1500px;
-    background: linear-gradient(to bottom, #fff, #484848);
-    border: 1px solid #ccc;
+    background: linear-gradient(to bottom, #686868, #484848);
 }
 
-#aboutme h1 {
+#aboutme>h1 {
     font-family: 'Courgette', cursive;
     font-size: 110px;
     text-align: center;
     font-weight: bold;
-    margin-top: 25px;
+    padding-top: 35px;
+    margin-bottom: 30px;
+    color: #fff;
+    letter-spacing: 0.15em;
 }
 
 #about_box {
@@ -95,12 +113,13 @@ table {
     height: 8%;
     border: 1px solid red;
     font-size: 60px;
-    color: #383838;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     font-family: 'SDMiSaeng';
+    /* font-family: 'Courgette', cursive; */
 }
 
 #introduce_sentence p {
@@ -208,6 +227,7 @@ table {
     text-align: left;
     font-weight: bold;
     margin-bottom: 5px;
+    color: #383838;
 }
 
 #profile hr {
@@ -238,6 +258,7 @@ table {
     text-align: left;
     font-weight: bold;
     margin-bottom: 5px;
+    color: #383838;
 }
 
 #education hr {
@@ -268,6 +289,7 @@ table {
     text-align: left;
     font-weight: bold;
     margin-bottom: 5px;
+    color: #383838;
 }
 
 #certification hr {
@@ -285,8 +307,7 @@ table {
 #skill {
     width: 100%;
     height: auto;
-    background: linear-gradient(to bottom, #484848, #383838);
-    border: 1px solid #fff;
+    background: linear-gradient(to bottom, #484848, #383838, #282828);
 }
 
 #skill h1 {
@@ -294,32 +315,32 @@ table {
     font-size: 110px;
     text-align: center;
     font-weight: bold;
-    margin-top: 50px;
+    padding-top: 200px;
     color: #fff;
+    letter-spacing: 0.15em;
 }
 
 #skill_bundle {
     width: 1600px;
     height: auto;
     margin: 30px auto 0;
-    border: 1px solid purple;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
 }
 
 #front {
     width: 100%;
     height: auto;
-    border: 1px solid yellow;
     display: flex;
 }
 
 #front_box {
     width: 50%;
     height: auto;
-    border: 1px solid green;
     z-index: 2;
 }
 
-#front_box h3{
+#front_box h3 {
     font-size: 50px;
     color: #fff;
     font-family: 'Courgette', cursive;
@@ -484,6 +505,7 @@ table {
 .prg {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .area {
@@ -496,7 +518,7 @@ table {
     font-size: 18px;
 }
 
-.percentage{
+.percentage {
     z-index: 3;
     position: relative;
     padding-right: 10px;
@@ -507,7 +529,7 @@ table {
     font-size: 18px;
 }
 
-#front_text{
+#front_text {
     width: 50%;
     height: 100%;
     /* border: 1px solid red;
@@ -516,24 +538,28 @@ table {
     padding: 140px 100px 30px;
 }
 
-.ft_tbox{
+.ft_tbox {
     width: 100%;
     height: 450px;
-    border: 1px solid red;
 }
 
-.ft_html, .ft_css, .ft_scss, .ft_js, .ft_jquery, .ft_ajax, .ft_vue{
+.ft_html,
+.ft_css,
+.ft_scss,
+.ft_js,
+.ft_jquery,
+.ft_ajax,
+.ft_vue {
     display: none;
 }
 
-.ft_imgbox{
+.ft_imgbox {
     width: 70%;
     height: 45%;
-    border: 1px solid wheat;
     margin: 0 auto;
 }
 
-.ft_text{
+.ft_text {
     width: 90%;
     height: 55%;
     margin: 0 auto;
@@ -541,7 +567,7 @@ table {
     padding: 20px 0;
 }
 
-.ft_text p{
+.ft_text p {
     font-size: 18px;
     letter-spacing: 2px;
     color: white;
@@ -549,49 +575,49 @@ table {
     font-family: 'LeferiBaseType-RegularA';
 }
 
-.html_b{
+.html_b {
     background-image: url(../img/skill/html.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.css_b{
+.css_b {
     background-image: url(../img/skill/css.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.scss_b{
+.scss_b {
     background-image: url(../img/skill/scss.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.js_b{
+.js_b {
     background-image: url(../img/skill/js.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.jquery_b{
+.jquery_b {
     background-image: url(../img/skill/jquery.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.ajax_b{
+.ajax_b {
     background-image: url(../img/skill/ajax.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.vue_b{
+.vue_b {
     background-image: url(../img/skill/vue.png);
     background-position: center;
     background-size: contain;
@@ -601,24 +627,109 @@ table {
 #back {
     width: 100%;
     height: 35%;
-    border: 1px solid blue;
     display: flex;
 }
 
 #back_text {
     width: 50%;
     height: 100%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    padding: 140px 100px 30px;
+}
+
+.bt_tbox {
+    width: 100%;
+    height: 450px;
+}
+
+.bt_java,
+.bt_c,
+.bt_python,
+.bt_php,
+.bt_linux,
+.bt_mysql,
+.bt_firebase {
+    display: none;
+}
+
+.bt_imgbox {
+    width: 70%;
+    height: 45%;
+    margin: 0 auto;
+}
+
+.bt_text {
+    width: 90%;
+    height: 55%;
+    margin: 0 auto;
+    border: 1px solid white;
+    padding: 20px 0;
+}
+
+.bt_text p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: white;
+    /* font-weight: bold; */
+    font-family: 'LeferiBaseType-RegularA';
+}
+
+.java_b {
+    background-image: url(../img/skill/java.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.c_b {
+    background-image: url(../img/skill/c.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.python_b {
+    background-image: url(../img/skill/python.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.php_b {
+    background-image: url(../img/skill/php.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.linux_b {
+    background-image: url(../img/skill/linux.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mysql_b {
+    background-image: url(../img/skill/mysql.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.firebase_b {
+    background-image: url(../img/skill/firebase.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #back_box {
     width: 50%;
     height: 100%;
-    border: 1px solid green;
     z-index: 2;
 }
 
-#back_box h3{
+#back_box h3 {
     font-size: 50px;
     color: #fff;
     font-family: 'Courgette', cursive;
@@ -783,17 +894,16 @@ table {
 #etc {
     width: 100%;
     height: 30%;
-    border: 1px solid red;
+    display: flex;
 }
 
 #etc_box {
     width: 50%;
     height: 100%;
-    border: 1px solid green;
     z-index: 2;
 }
 
-#etc_box h3{
+#etc_box h3 {
     font-size: 50px;
     color: #fff;
     font-family: 'Courgette', cursive;
@@ -991,21 +1101,105 @@ table {
     }
 }
 
+#etc_text {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    padding: 140px 100px 30px;
+}
+
+.etc_tbox {
+    width: 100%;
+    height: 400px;
+}
+
+.etc_photoshop,
+.etc_illustrator,
+.etc_gcp,
+.etc_aws,
+.etc_android,
+.etc_github {
+    display: none;
+}
+
+.etc_imgbox {
+    width: 70%;
+    height: 45%;
+    margin: 0 auto;
+}
+
+.etc_text {
+    width: 90%;
+    height: 55%;
+    margin: 0 auto;
+    border: 1px solid white;
+    padding: 20px 0;
+}
+
+.etc_text p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: white;
+    /* font-weight: bold; */
+    font-family: 'LeferiBaseType-RegularA';
+}
+
+.photoshop_b {
+    background-image: url(../img/skill/photoshop.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.illustrator_b {
+    background-image: url(../img/skill/illustrator.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.gcp_b {
+    background-image: url(../img/skill/gcp.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.aws_b {
+    background-image: url(../img/skill/aws.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.android_b {
+    background-image: url(../img/skill/android.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.github_b {
+    background-image: url(../img/skill/github.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #tool {
     width: 100%;
     height: 10%;
-    border: 1px solid white;
     padding: 40px 100px 40px 100px;
 }
 
-#tool h3{
+#tool h3 {
     font-size: 50px;
     color: #fff;
     font-family: 'Courgette', cursive;
     letter-spacing: 0.2em;
 }
 
-#tool_box{
+#tool_box {
     width: 100%;
     height: 200px;
     /* border: 1px solid white; */
@@ -1014,35 +1208,36 @@ table {
     justify-content: space-between;
 }
 
-.tool_img{
+.tool_img {
     width: 115px;
     height: 115px;
     border: 1px solid #fff;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.img_vscode{
+.img_vscode {
     background-image: url(../img/skill/vscode.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.img_as{
+.img_as {
     background-image: url(../img/skill/androidstudio.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.img_spyder{
+.img_spyder {
     background-image: url(../img/skill/spyder.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.img_anaconda{
+.img_anaconda {
     background-image: url(../img/skill/anaconda.png);
     background-position: center;
     background-size: contain;
@@ -1056,21 +1251,21 @@ table {
     background-repeat: no-repeat;
 }
 
-.img_eclipse{
+.img_eclipse {
     background-image: url(../img/skill/eclipse.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.img_putty{
+.img_putty {
     background-image: url(../img/skill/putty.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.img_mobaxterm{
+.img_mobaxterm {
     background-image: url(../img/skill/MobaXterm.png);
     background-position: center;
     background-size: contain;
@@ -1081,30 +1276,47 @@ table {
     position: fixed;
     width: 100px;
     height: 400px;
-    border: 1px solid red;
     top: 50%;
     right: 0%;
     transform: translateY(-50%);
 }
 
 .fixed {
-    width: 100%;
+    width: 100px;
     height: 100px;
-    border: 1px solid yellow;
     display: inline-block;
 }
 
-#footer{
+.fixed img{
+    width: 60%;
+    height: 60%;
+    margin: 5px auto;
+    display: block;
+}
+
+.fixed p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    font-family: 'Courgette', cursive;
+}
+
+.fixed:hover p {
+    color: #888888;
+}
+
+#footer {
     width: 100%;
     height: 200px;
-    border: 1px solid #fff;
-    background-color: #383838;
+    background: linear-gradient(to bottom, #282828, #181818);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#footer h4{
+#footer h4 {
     font-size: 15px;
     font-weight: bold;
     color: #484848;
