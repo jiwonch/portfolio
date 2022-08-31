@@ -1,11 +1,13 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 @font-face {
     font-family: 'SDMiSaeng';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDMiSaeng.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'LeferiBaseType-RegularA';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
@@ -23,7 +25,7 @@
 html,
 body {
     position: relative;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 ::selection {
@@ -60,11 +62,11 @@ table {
 #aboutme {
     width: 100%;
     height: 1500px;
-    background:linear-gradient(to bottom, #fff, #484848);
+    background: linear-gradient(to bottom, #fff, #484848);
     border: 1px solid #ccc;
 }
 
-#aboutme h1{
+#aboutme h1 {
     font-family: 'Courgette', cursive;
     font-size: 110px;
     text-align: center;
@@ -72,7 +74,7 @@ table {
     margin-top: 25px;
 }
 
-#about_box{
+#about_box {
     width: 1600px;
     height: 1300px;
     border: 1px solid blue;
@@ -80,7 +82,7 @@ table {
     display: flex;
 }
 
-#photo_box{
+#photo_box {
     width: 50%;
     height: 100%;
     border: 1px solid red;
@@ -88,7 +90,7 @@ table {
     flex-direction: column;
 }
 
-#introduce_sentence{
+#introduce_sentence {
     width: 100%;
     height: 8%;
     border: 1px solid red;
@@ -126,25 +128,31 @@ table {
     animation-duration: 6.5s;
 }
 
-@keyframes move{
-    0%, 100%{
+@keyframes move {
+
+    0%,
+    100% {
         top: 0px;
     }
-    20%{
+
+    20% {
         top: -62px;
     }
-    40%{
+
+    40% {
         top: -124px;
     }
-    60%{
+
+    60% {
         top: -186px;
     }
-    80%{
+
+    80% {
         top: -248px;
     }
 }
 
-#photo_me{
+#photo_me {
     width: 100%;
     height: 37%;
     border: 1px solid green;
@@ -153,7 +161,7 @@ table {
     align-items: center;
 }
 
-#photo_img{
+#photo_img {
     width: 450px;
     height: 460px;
     border-radius: 50%;
@@ -164,23 +172,37 @@ table {
     background-size: cover; */
 }
 
-#about_text{
+#about_text {
     width: 50%;
     height: 100%;
     border: 1px solid green;
 }
 
-#profile{
+#aboutme_text {
+    width: 100%;
+    height: 45%;
+    border: 1px solid red;
+}
+
+#amt {
+    width: 100%;
+    height: 38%;
+    border: 1px solid red;
+}
+
+#profile {
     width: 700px;
     height: 300px;
-    border: 5px solid #fff;
+    /* border: 5px solid #fff; */
     border-radius: 40px;
     background-color: #fff;
     margin: 55px auto 0;
     padding: 5px 30px 5px 30px;
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
 }
 
-#profile h1{
+#profile h1 {
     font-size: 40px;
     font-family: 'SDMiSaeng';
     text-align: left;
@@ -188,7 +210,7 @@ table {
     margin-bottom: 5px;
 }
 
-#profile hr{
+#profile hr {
     border-bottom: 2px solid #383838;
     margin-bottom: 30px;
 }
@@ -200,7 +222,7 @@ table {
     margin-top: 8px;
 }
 
-#education{
+#education {
     width: 700px;
     height: 430px;
     border: 5px solid #fff;
@@ -210,7 +232,7 @@ table {
     padding: 5px 30px 5px 30px;
 }
 
-#education h1{
+#education h1 {
     font-size: 40px;
     font-family: 'SDMiSaeng';
     text-align: left;
@@ -218,7 +240,7 @@ table {
     margin-bottom: 5px;
 }
 
-#education hr{
+#education hr {
     border-bottom: 2px solid #383838;
     margin-bottom: 30px;
 }
@@ -230,7 +252,7 @@ table {
     margin-top: 8px;
 }
 
-#certification{
+#certification {
     width: 700px;
     height: 330px;
     border: 5px solid #fff;
@@ -240,7 +262,7 @@ table {
     padding: 5px 30px 5px 30px;
 }
 
-#certification h1{
+#certification h1 {
     font-size: 40px;
     font-family: 'SDMiSaeng';
     text-align: left;
@@ -248,7 +270,7 @@ table {
     margin-bottom: 5px;
 }
 
-#certification hr{
+#certification hr {
     border-bottom: 2px solid #383838;
     margin-bottom: 30px;
 }
@@ -262,12 +284,12 @@ table {
 
 #skill {
     width: 100%;
-    height: 1700px;
+    height: auto;
     background: linear-gradient(to bottom, #484848, #383838);
     border: 1px solid #fff;
 }
 
-#skill h1{
+#skill h1 {
     font-family: 'Courgette', cursive;
     font-size: 110px;
     text-align: center;
@@ -276,23 +298,486 @@ table {
     color: #fff;
 }
 
-#skill_bundle{
+#skill_bundle {
     width: 1600px;
-    height: 85%;
+    height: auto;
     margin: 30px auto 0;
     border: 1px solid purple;
 }
 
 #front {
     width: 100%;
-    height: 25%;
+    height: auto;
     border: 1px solid yellow;
+    display: flex;
 }
 
-#back{
+#front_box {
+    width: 50%;
+    height: auto;
+    border: 1px solid green;
+    z-index: 2;
+}
+
+#front_box h3{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Courgette', cursive;
+    letter-spacing: 0.2em;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+#front_progress {
+    width: 600px;
+    margin: 40px auto;
+    border-style: solid;
+    height: auto;
+    border-width: 1px;
+    /* background-color: white; */
+    border: 1px solid #cdcdcd;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+#front_progress {
+    text-align: center;
+    font-style: 25px;
+    padding: 10px;
+    color: #555;
+}
+
+.progress {
+    width: 540px;
+    height: 40px;
+    position: relative;
+    background: rgba(17, 17, 17, 0.3);
+    margin: 20px auto;
+}
+
+#front_html {
+    width: 90%;
+    animation: pro_html 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_html {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+
+#front_css {
+    width: 85%;
+    animation: pro_css 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_css {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 85%;
+    }
+}
+
+#front_scss {
+    width: 80%;
+    animation: pro_scss 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_scss {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+#front_js {
+    width: 70%;
+    animation: pro_js 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_js {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+#front_jquery {
+    width: 85%;
+    animation: pro_jquery 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_jquery {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 85%;
+    }
+}
+
+#front_ajax {
+    width: 80%;
+    animation: pro_ajax 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_ajax {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+#front_vue {
+    width: 55%;
+    animation: pro_vue 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_vue {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 55%;
+    }
+}
+
+.prg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.area {
+    z-index: 1;
+    /* position: absolute; */
+    margin-top: 8px;
+    margin-left: 10px;
+    text-shadow: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.percentage{
+    z-index: 3;
+    position: relative;
+    padding-right: 10px;
+    margin-top: 8px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+#front_text{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red;
+    display: flex;
+    justify-content: center; */
+    padding: 140px 100px 30px;
+}
+
+.ft_tbox{
+    width: 100%;
+    height: 450px;
+    border: 1px solid red;
+}
+
+.ft_html, .ft_css, .ft_scss, .ft_js, .ft_jquery, .ft_ajax, .ft_vue{
+    display: none;
+}
+
+.ft_imgbox{
+    width: 70%;
+    height: 45%;
+    border: 1px solid wheat;
+    margin: 0 auto;
+}
+
+.ft_text{
+    width: 90%;
+    height: 55%;
+    margin: 0 auto;
+    border: 1px solid white;
+    padding: 20px 0;
+}
+
+.ft_text p{
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: white;
+    /* font-weight: bold; */
+    font-family: 'LeferiBaseType-RegularA';
+}
+
+.html_b{
+    background-image: url(../img/skill/html.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.css_b{
+    background-image: url(../img/skill/css.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.scss_b{
+    background-image: url(../img/skill/scss.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.js_b{
+    background-image: url(../img/skill/js.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.jquery_b{
+    background-image: url(../img/skill/jquery.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ajax_b{
+    background-image: url(../img/skill/ajax.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.vue_b{
+    background-image: url(../img/skill/vue.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#back {
     width: 100%;
     height: 35%;
     border: 1px solid blue;
+    display: flex;
+}
+
+#back_text {
+    width: 50%;
+    height: 100%;
+    border: 1px solid blue;
+}
+
+#back_box {
+    width: 50%;
+    height: 100%;
+    border: 1px solid green;
+    z-index: 2;
+}
+
+#back_box h3{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Courgette', cursive;
+    letter-spacing: 0.2em;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+#back_progress {
+    width: 600px;
+    margin: 40px auto;
+    border-style: solid;
+    height: auto;
+    border-width: 1px;
+    /* background-color: white; */
+    border: 1px solid #cdcdcd;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+#back_progress {
+    text-align: center;
+    font-style: 25px;
+    padding: 10px;
+    color: #555;
+}
+
+#back .progress {
+    width: 540px;
+    height: 40px;
+    position: relative;
+    background: rgba(17, 17, 17, 0.3);
+    margin: 20px auto;
+}
+
+#back_java {
+    width: 70%;
+    animation: pro_java 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_java {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+#back_c {
+    width: 65%;
+    animation: pro_c 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_c {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 65%;
+    }
+}
+
+#back_python {
+    width: 65%;
+    animation: pro_python 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_python {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 65%;
+    }
+}
+
+#back_php {
+    width: 60%;
+    animation: pro_php 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_php {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 60%;
+    }
+}
+
+#back_linux {
+    width: 65%;
+    animation: pro_linux 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_linux {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 65%;
+    }
+}
+
+#db_mysql {
+    width: 70%;
+    animation: pro_mysql 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_mysql {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+#db_firebase {
+    width: 75%;
+    animation: pro_firebase 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_firebase {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 75%;
+    }
 }
 
 #etc {
@@ -301,13 +786,298 @@ table {
     border: 1px solid red;
 }
 
+#etc_box {
+    width: 50%;
+    height: 100%;
+    border: 1px solid green;
+    z-index: 2;
+}
+
+#etc_box h3{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Courgette', cursive;
+    letter-spacing: 0.2em;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+#etc_progress {
+    width: 600px;
+    margin: 40px auto;
+    border-style: solid;
+    height: auto;
+    border-width: 1px;
+    /* background-color: white; */
+    border: 1px solid #cdcdcd;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+#etc_progress {
+    text-align: center;
+    font-style: 25px;
+    padding: 10px;
+    color: #555;
+}
+
+#etc .progress {
+    width: 540px;
+    height: 40px;
+    position: relative;
+    background: rgba(17, 17, 17, 0.3);
+    margin: 20px auto;
+}
+
+#design_photoshop {
+    width: 65%;
+    animation: pro_photoshop 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_photoshop {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 65%;
+    }
+}
+
+#design_illustrator {
+    width: 55%;
+    animation: pro_illustrator 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_illustrator {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 55%;
+    }
+}
+
+#etc_gcp {
+    width: 50%;
+    animation: pro_gcp 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_gcp {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+#etc_aws {
+    width: 55%;
+    animation: pro_aws 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_aws {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 55%;
+    }
+}
+
+#etc_android {
+    width: 70%;
+    animation: pro_android 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_android {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+#etc_github {
+    width: 80%;
+    animation: pro_github 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_github {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+#front_scss {
+    width: 80%;
+    animation: pro_scss 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_scss {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+#front_js {
+    width: 70%;
+    animation: pro_js 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_js {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+#front_jquery {
+    width: 85%;
+    animation: pro_jquery 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes pro_jquery {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 85%;
+    }
+}
+
 #tool {
     width: 100%;
     height: 10%;
     border: 1px solid white;
+    padding: 40px 100px 40px 100px;
 }
 
-#gotab{
+#tool h3{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Courgette', cursive;
+    letter-spacing: 0.2em;
+}
+
+#tool_box{
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tool_img{
+    width: 115px;
+    height: 115px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.img_vscode{
+    background-image: url(../img/skill/vscode.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img_as{
+    background-image: url(../img/skill/androidstudio.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img_spyder{
+    background-image: url(../img/skill/spyder.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img_anaconda{
+    background-image: url(../img/skill/anaconda.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img_jupyter {
+    background-image: url(../img/skill/jupyter.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img_eclipse{
+    background-image: url(../img/skill/eclipse.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img_putty{
+    background-image: url(../img/skill/putty.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img_mobaxterm{
+    background-image: url(../img/skill/MobaXterm.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#gotab {
     position: fixed;
     width: 100px;
     height: 400px;
@@ -317,9 +1087,28 @@ table {
     transform: translateY(-50%);
 }
 
-.fixed{
+.fixed {
     width: 100%;
     height: 100px;
     border: 1px solid yellow;
     display: inline-block;
+}
+
+#footer{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #fff;
+    background-color: #383838;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h4{
+    font-size: 15px;
+    font-weight: bold;
+    color: #484848;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Courgette', cursive;
 }

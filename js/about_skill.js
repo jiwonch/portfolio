@@ -1,3 +1,40 @@
 // split 효과 사용하기
 Splitting();
 
+$(document).ready(function(){
+    $("#front_html").mouseover(function(){
+        $(".ft_html").fadeIn();
+    }).mouseout(function(){
+        $(".ft_html").hide();
+    });
+    $("#front_css").mouseover(function(){
+        $(".ft_css").fadeIn();
+    }).mouseout(function(){
+        $(".ft_css").hide();
+    });
+    $("#front_scss").mouseover(function(){
+        $(".ft_scss").fadeIn();
+    }).mouseout(function(){
+        $(".ft_scss").hide();
+    });
+    $("#front_js").mouseover(function(){
+        $(".ft_js").fadeIn();
+    }).mouseout(function(){
+        $(".ft_js").hide();
+    });
+    $("#front_jquery").mouseover(function(){
+        $(".ft_jquery").fadeIn();
+    }).mouseout(function(){
+        $(".ft_jquery").hide();
+    });
+    $("#front_ajax").mouseover(function(){
+        $(".ft_ajax").fadeIn();
+    }).mouseout(function(){
+        $(".ft_ajax").hide();
+    });
+    $("#front_vue").mouseover(function(){
+        $(".ft_vue").fadeIn();
+    }).mouseout(function(){
+        $(".ft_vue").hide();
+    });
+});
