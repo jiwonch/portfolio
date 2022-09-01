@@ -1,1 +1,215 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@font-face {
+    font-family: 'SDMiSaeng';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDMiSaeng.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiBaseType-RegularA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    scroll-behavior:smooth;
+}
+
+ul, li, ol{
+    list-style: none;
+}
+
+::selection {
+    /* background-color: #A9B0B5; */
+    /* background-color: #BFB3B2; */
+    background-color: rgba(148, 174, 183, 0.5);
+}
+
+::-moz-selection {
+    background-color: rgba(148, 174, 183, 0.5);
+}
+
+::-webkit-selection {
+    background-color: rgba(148, 174, 183, 0.5);
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+body{
+    overflow: hidden;
+}
+
+/* content */
+.project{
+    height: 100%;
+    position: relative;
+    width: 900%;
+}
+
+.box{
+    height: 100%;
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    float: left;
+    width: calc(100%/9);
+    background-color: #383838;
+}
+
+.box h1{
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 30px;
+    letter-spacing: 0.2em;
+}
+
+.project_box{
+    width: 1300px;
+    height: 620px;
+    margin: 50px auto 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.project_left{
+    width: 50%;
+    height: 100%;
+}
+
+.project_image{
+    width: 98%;
+    height: 72%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: 3%;
+    margin-left: 3%;
+    overflow: hidden;
+}
+
+#pj1{
+    background-image: url('../img/project/shoppingmall_main.jpeg');
+    background-position: top;
+    background-size: cover;
+}
+
+.project_text{
+    width: 45%;
+    height: 18%;
+    margin-top: 3.5%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pro_home_img{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro_home_img h6{
+    font-size: 16px;
+    font-family: 'Courgette', cursive;
+    letter-spacing: 0.2em;
+    margin-top: 5px;
+}
+
+.page_go{
+    width: 60px;
+    height: 60px;
+}
+
+.page_go img{
+    width: 100%;
+    height: 100%;
+}
+
+/* fixed section */
+.tab_box{
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    z-index: 50;
+    transform: translateX(-50%);
+}
+
+.tab_box ul{
+    display: flex;
+    width: 1300px;
+    height: 60px;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 15px;
+}
+
+.tab_box ul li {
+    margin: 0 5px 0 5px;
+    color: #fff;
+    display: block;
+    /* font-family: 'Courgette', cursive; */
+    font-family: 'LeferiBaseType-RegularA';
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 17px;
+}
+
+.tab_box ul .tab_1{
+    color: red;
+}
+
+#gotab {
+    position: fixed;
+    width: 100px;
+    height: 450px;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+}
+
+.fixed {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.fixed img{
+    width: 60%;
+    height: 60%;
+    margin: 5px auto;
+    display: block;
+}
+
+.fixed p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    font-family: 'Courgette', cursive;
+}
+
+.fixed:hover p {
+    color: #888888;
+}
