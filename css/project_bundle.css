@@ -101,14 +101,14 @@ body {
 .box h1 {
     font-family: 'Courgette', cursive;
     text-align: center;
-    font-size: 70px;
-    margin-top: 30px;
+    font-size: 3.0em;
+    margin-top: 2%;
     letter-spacing: 0.2em;
 }
 
 .project_box {
     width: 1300px;
-    height: 620px;
+    height: 65%;
     margin: 50px auto 20px;
     border: 1px solid #fff;
     border-radius: 10px;
@@ -137,8 +137,32 @@ body {
     background-size: cover;
 }
 
+#pj2{
+    background-image: url('../img/project/ridibooks_main.jpeg');
+    background-position: top;
+    background-size: cover;
+}
+
+#pj3{
+    background-image: url('../img/project/asac_main.jpeg');
+    background-position: top;
+    background-size: cover;
+}
+
+#pj4{
+    background-image: url('../img/project/lol_main.jpeg');
+    background-position: top;
+    background-size: cover;
+}
+
 #pj5 {
     background-image: url('../img/project/shoppingmall_main.jpeg');
+    background-position: top;
+    background-size: cover;
+}
+
+#pj7 {
+    background-image: url('../img/project/team_main.jpeg');
     background-position: top;
     background-size: cover;
 }
@@ -192,7 +216,7 @@ body {
 
 .project_content h3 {
     margin-top: 2%;
-    font-size: 33px;
+    font-size: 1.4em;
     font-family: 'ghanachoco';
     letter-spacing: 0.2em;
     /* font-family: 'GyeonggiTitleM'; */
@@ -200,7 +224,7 @@ body {
 }
 
 .project_content h3 span {
-    font-size: 23px;
+    font-size: 0.65em;
     color: #ba000c;
     letter-spacing: 2px;
 }
@@ -209,7 +233,7 @@ body {
     font-family: 'GyeonggiTitleM';
     font-weight: lighter;
     letter-spacing: 1.5px;
-    font-size: 23px;
+    font-size: 1.45rem;
     line-height: 40px;
 }
 
@@ -251,7 +275,7 @@ body {
 /* fixed section */
 .tab_box {
     position: fixed;
-    bottom: 50px;
+    bottom: 2%;
     left: 50%;
     z-index: 50;
     transform: translateX(-50%);
@@ -261,7 +285,7 @@ body {
     display: flex;
     width: 1300px;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 10px;
     justify-content: space-between;
     align-items: center;
     padding: 0 15px 0 15px;
