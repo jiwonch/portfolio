@@ -68,18 +68,23 @@ $(".box").on("mousewheel DOMMouseScroll", function (e) {
 
 // page_go mouseover out
 $(".pro_home_img h6").hide();
-$(".homepage img").mouseover(function(){
+$(".homepage img").mouseover(function () {
     $(".page h6").stop().fadeIn(300);
-}).mouseout(function(){
+}).mouseout(function () {
     $(".page h6").stop().fadeOut(100);
 });
-$(".code img").mouseover(function(){
+$(".code img").mouseover(function () {
     $(".gcode h6").stop().fadeIn(300);
-}).mouseout(function(){
+}).mouseout(function () {
     $(".gcode h6").stop().fadeOut(100);
 });
-$(".docupdf img").mouseover(function(){
+$(".docupdf img").mouseover(function () {
     $(".dpdf h6").stop().fadeIn(300);
-}).mouseout(function(){
+}).mouseout(function () {
     $(".dpdf h6").stop().fadeOut(100);
+});
+$(".wireframe img").mouseover(function () {
+    $(".wire h6").stop().fadeIn(300);
+}).mouseout(function () {
+    $(".wire h6").stop().fadeOut(100);
 });

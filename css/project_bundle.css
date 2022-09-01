@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 @font-face {
     font-family: 'SDMiSaeng';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDMiSaeng.woff') format('woff');
@@ -14,22 +15,46 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ghanachoco';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GyeonggiTitleM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BCcardB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.1/BCcardB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* reset */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
     position: relative;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
-ul, li, ol{
+ul,
+li,
+ol {
     list-style: none;
 }
 
@@ -47,23 +72,23 @@ ul, li, ol{
     background-color: rgba(148, 174, 183, 0.5);
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
 }
 
-body{
+body {
     overflow: hidden;
 }
 
 /* content */
-.project{
+.project {
     height: 100%;
     position: relative;
     width: 900%;
 }
 
-.box{
+.box {
     height: 100%;
     position: relative;
     color: #fff;
@@ -73,7 +98,7 @@ body{
     background-color: #383838;
 }
 
-.box h1{
+.box h1 {
     font-family: 'Courgette', cursive;
     text-align: center;
     font-size: 70px;
@@ -81,22 +106,24 @@ body{
     letter-spacing: 0.2em;
 }
 
-.project_box{
+.project_box {
     width: 1300px;
     height: 620px;
     margin: 50px auto 20px;
     border: 1px solid #fff;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.project_left{
+.project_left {
     width: 50%;
     height: 100%;
 }
 
-.project_image{
+.project_image {
     width: 98%;
-    height: 72%;
+    height: 74%;
     border: 2px solid #fff;
     border-radius: 5px;
     margin-top: 3%;
@@ -104,22 +131,28 @@ body{
     overflow: hidden;
 }
 
-#pj1{
+#pj1 {
+    background-image: url('../img/project/hollys_main.jpeg');
+    background-position: top;
+    background-size: cover;
+}
+
+#pj5 {
     background-image: url('../img/project/shoppingmall_main.jpeg');
     background-position: top;
     background-size: cover;
 }
 
-.project_text{
-    width: 45%;
+.project_text {
+    width: 65%;
     height: 18%;
-    margin-top: 3.5%;
+    margin-top: 2%;
     margin-left: 3%;
     display: flex;
     justify-content: space-between;
 }
 
-.pro_home_img{
+.pro_home_img {
     width: 120px;
     height: 100%;
     display: flex;
@@ -128,25 +161,95 @@ body{
     align-items: center;
 }
 
-.pro_home_img h6{
+.pro_home_img h6 {
     font-size: 16px;
     font-family: 'Courgette', cursive;
     letter-spacing: 0.2em;
     margin-top: 5px;
 }
 
-.page_go{
-    width: 60px;
-    height: 60px;
+.page_go {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s;
 }
 
-.page_go img{
+.page_go:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.page_go img {
     width: 100%;
     height: 100%;
 }
 
+.project_content {
+    width: 48%;
+    height: 100%;
+    padding: 1.5%;
+}
+
+.project_content h3 {
+    margin-top: 2%;
+    font-size: 33px;
+    font-family: 'ghanachoco';
+    letter-spacing: 0.2em;
+    /* font-family: 'GyeonggiTitleM'; */
+    /* font-family: 'BCcardB'; */
+}
+
+.project_content h3 span {
+    font-size: 23px;
+    color: #ba000c;
+    letter-spacing: 2px;
+}
+
+.project_content p {
+    font-family: 'GyeonggiTitleM';
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+    font-size: 23px;
+    line-height: 40px;
+}
+
+.function_content {
+    margin-top: 5%;
+}
+
+.pj_color {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 5%;
+    margin-bottom: 4%;
+}
+
+.pj_color p {
+    margin-right: 20px;
+}
+
+.pj_c {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+#pj1_mc1 {
+    background-color: #f6f5f1;
+    border: 2px solid #f6f5f1;
+}
+
+#pj1_mc2 {
+    background-color: #ba000c;
+    border: 2px solid #ba000c;
+}
+
 /* fixed section */
-.tab_box{
+.tab_box {
     position: fixed;
     bottom: 50px;
     left: 50%;
@@ -154,7 +257,7 @@ body{
     transform: translateX(-50%);
 }
 
-.tab_box ul{
+.tab_box ul {
     display: flex;
     width: 1300px;
     height: 60px;
@@ -162,6 +265,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0 15px 0 15px;
+    border: 1px solid #fff;
 }
 
 .tab_box ul li {
@@ -175,7 +279,7 @@ body{
     font-size: 17px;
 }
 
-.tab_box ul .tab_1{
+.tab_box ul .tab_1 {
     color: red;
 }
 
@@ -186,6 +290,7 @@ body{
     top: 50%;
     right: 0%;
     transform: translateY(-50%);
+    background-color: rgba(56, 56, 56, 0.1);
 }
 
 .fixed {
@@ -194,7 +299,7 @@ body{
     display: inline-block;
 }
 
-.fixed img{
+.fixed img {
     width: 60%;
     height: 60%;
     margin: 5px auto;
