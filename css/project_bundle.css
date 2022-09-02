@@ -161,6 +161,12 @@ body {
     background-size: cover;
 }
 
+#pj6 {
+    background-image: url('../img/project/hlog.png');
+    background-position: center;
+    background-size: cover;
+}
+
 #pj7 {
     background-image: url('../img/project/team_main.jpeg');
     background-position: top;
@@ -270,6 +276,46 @@ body {
 #pj1_mc2 {
     background-color: #ba000c;
     border: 2px solid #ba000c;
+}
+
+#pj2_mc1{
+    background-color: #1e9eff;
+    border: 2px solid #1e9eff;
+}
+
+#pj3_mc1{
+    background-color: #f18b1e;
+    border: 2px solid #f18b1e;
+}
+
+#pj4_mc1{
+    background-color: #c89b3c;
+    border: 2px solid #c89b3c;
+}
+
+#pj4_mc2{
+    background-color: #0ac8b9;
+    border: 2px solid #0ac8b9;
+}
+
+#pj5_mc1{
+    background-color: #fce4e7;
+    border: 2px solid #fce4e7;
+}
+
+#pj5_mc2{
+    background-color: #9acd32;
+    border: 2px solid #9acd32;
+}
+
+#pj6_mc1{
+    background-color: #dcedc8;
+    border: 2px solid #dcedc8;
+}
+
+#pj6_mc2{
+    background-color: #e3f2fd;
+    border: 2px solid #e3f2fd;
 }
 
 /* fixed section */
