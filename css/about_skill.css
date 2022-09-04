@@ -311,6 +311,7 @@ table {
     width: 100%;
     height: auto;
     background: linear-gradient(to bottom, #484848, #383838, #282828);
+    padding-top: 200px;
 }
 
 #skill h1 {
@@ -318,9 +319,9 @@ table {
     font-size: 110px;
     text-align: center;
     font-weight: bold;
-    padding-top: 200px;
     color: #fff;
     letter-spacing: 0.15em;
+    padding-top: 40px;
 }
 
 #skill_bundle {
