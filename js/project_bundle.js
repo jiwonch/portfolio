@@ -88,3 +88,13 @@ $(".wireframe img").mouseover(function () {
 }).mouseout(function () {
     $(".wire h6").stop().fadeOut(100);
 });
+
+// project image hover effect
+$(".project_image img").hover(function(){
+    var pjImgH = $(this).height();
+    var projectH = $(".project_image").height();
+
+    $(this).stop().animate({top:-(pjImgH - projectH)},8000);
+}, function(){
+    $(this).stop().animate({top:0},8000);
+});

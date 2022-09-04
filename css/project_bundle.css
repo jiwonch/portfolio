@@ -129,48 +129,32 @@ body {
     margin-top: 3%;
     margin-left: 3%;
     overflow: hidden;
+    position: relative;
 }
 
-#pj1 {
-    background-image: url('../img/project/hollys_main.jpeg');
-    background-position: top;
-    background-size: cover;
+.project_image img{
+    width: 100%;
+    position: absolute;
 }
 
-#pj2{
-    background-image: url('../img/project/ridibooks_main.jpeg');
-    background-position: top;
-    background-size: cover;
+.project_image2 {
+    width: 98%;
+    height: 74%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: 3%;
+    margin-left: 3%;
+    overflow: hidden;
+    position: relative;
 }
 
-#pj3{
-    background-image: url('../img/project/asac_main.jpeg');
-    background-position: top;
-    background-size: cover;
+.project_image2 img{
+    width: 100%;
+    position: absolute;
 }
 
-#pj4{
-    background-image: url('../img/project/lol_main.jpeg');
-    background-position: top;
-    background-size: cover;
-}
-
-#pj5 {
-    background-image: url('../img/project/shoppingmall_main.jpeg');
-    background-position: top;
-    background-size: cover;
-}
-
-#pj6 {
-    background-image: url('../img/project/hlog.png');
-    background-position: center;
-    background-size: cover;
-}
-
-#pj7 {
-    background-image: url('../img/project/team_main.jpeg');
-    background-position: top;
-    background-size: cover;
+#pj8 img{
+    height: 100%;
 }
 
 .project_text {
@@ -316,6 +300,32 @@ body {
 #pj6_mc2{
     background-color: #e3f2fd;
     border: 2px solid #e3f2fd;
+}
+
+#pj6_mc3{
+    background-color: #D97171;
+    border: 2px solid #D97171;
+}
+
+#pj7_mc1{
+    background-color: #FFC219;
+    border: 2px solid #FFC219;
+}
+
+#pj8_mc1{
+    background-color: #2092AA;
+    border: 2px solid #2092AA;
+}
+
+#pj8_mc2{
+    background-color: #FFBE10;
+    border: 2px solid #FFBE10;
+}
+
+#pj9_mc1{
+    background-color: #333333;
+    border: 2px solid #333333;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* fixed section */
