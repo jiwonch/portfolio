@@ -315,7 +315,6 @@ table {
 #contact_content{
     width: 65%;
     height: 100%;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -343,7 +342,6 @@ table {
 #sns{
     width: 70%;
     height: 200px;
-    border: 1px solid blue;
     display: flex;
     flex-wrap: wrap;
 }
@@ -364,7 +362,7 @@ table {
     height: 80%;
     margin: auto;
     color: white;
-    background: linear-gradient(-180deg, white, #fda3b2);
+    background: linear-gradient(-180deg, #D6E5FA, #A460ED);
     display: flex;
     align-content: center;
     justify-content: center;
@@ -376,7 +374,7 @@ table {
     margin: auto;
     font-size: 40px;
     color: transparent;
-    background: linear-gradient(45deg, #a58fe9, #e37682);
+    background: linear-gradient(45deg, #F94892, #6867AC);
     background-clip: text;
     -webkit-background-clip: text;
 }
@@ -403,6 +401,14 @@ table {
 .hex:hover{
     border-radius: 50px;
     transition: 0.5s;
+    background: linear-gradient(-180deg, #A460ED, #D6E5FA);
+}
+
+.hex:hover i{
+    color: transparent;
+    background: linear-gradient(45deg, #fff, #F94892);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .hex:hover::before{
@@ -418,25 +424,26 @@ table {
 #contact_myimg_home{
     width: 35%;
     height: 100%;
-    border: 1px solid yellow;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
+    margin-top: -50px;
 }
 
-#my_photo{
+/* #my_photo{
     width: 70%;
     height: 70%;
     border: 1px solid blue;
     border-radius: 50%;
-}
+} */
 
 #contact_myimg_home h3{
     font-family: 'Courgette', cursive;
     color: #fff;
     letter-spacing: 2px;
-    margin-top: 50px;
+    margin-top: 80px;
     font-size: 25px;
 }
 
@@ -452,11 +459,11 @@ table {
 }
 
 #home_ct a{
-    color:#616060;
+    color:#fff;
     font-size: 20px;
     transform: rotate(-90deg);
 }
 
 #home_ct a:hover{
-    color:#fff;
+    color:#A460ED;
 }

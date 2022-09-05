@@ -166,6 +166,10 @@ body {
     justify-content: space-between;
 }
 
+#pro_text_box3{
+    width: 45%;
+}
+
 .pro_home_img {
     width: 120px;
     height: 100%;
@@ -180,6 +184,7 @@ body {
     font-family: 'Courgette', cursive;
     letter-spacing: 0.2em;
     margin-top: 5px;
+    color: #a460ed;
 }
 
 .page_go {
@@ -215,7 +220,7 @@ body {
 
 .project_content h3 span {
     font-size: 0.65em;
-    color: #ba000c;
+    color: #a460ed;
     letter-spacing: 2px;
 }
 
@@ -229,6 +234,11 @@ body {
 
 .function_content {
     margin-top: 5%;
+}
+
+.function_content span{
+    color: #a460ed;
+    font-weight: bold;
 }
 
 .pj_color {
@@ -360,7 +370,7 @@ body {
 }
 
 .tab_box ul .tab_1 {
-    color: red;
+    color: #a460ed;
 }
 
 #gotab {
@@ -396,5 +406,5 @@ body {
 }
 
 .fixed:hover p {
-    color: #888888;
+    color: #a460ed;
 }

@@ -23,31 +23,31 @@ $(".box").on("mousewheel DOMMouseScroll", function (e) {
 
     if (bx == 0) {
         $(".tab").css({ "color": "#fff" });
-        $(".tab_1").css({ "color": "red" });
+        $(".tab_1").css({ "color": "#a460ed" });
     } else if (bx == 1) {
         $(".tab").css({ "color": "#fff" });
-        $(".tab_2").css({ "color": "red" });
+        $(".tab_2").css({ "color": "#a460ed" });
     } else if (bx == 2) {
         $(".tab").css({ "color": "#fff" });
-        $(".tab_3").css({ "color": "red" });
+        $(".tab_3").css({ "color": "#a460ed" });
     } else if (bx == 3) {
         $(".tab").css({ "color": "#fff" });
-        $(".tab_4").css({ "color": "red" });
+        $(".tab_4").css({ "color": "#a460ed" });
     } else if (bx == 4) {
         $(".tab").css({ "color": "#fff" });
-        $(".tab_5").css({ "color": "red" });
+        $(".tab_5").css({ "color": "#a460ed" });
     } else if (bx == 5) {
         $(".tab").css({ "color": "#fff" });
-        $(".tab_6").css({ "color": "red" });
+        $(".tab_6").css({ "color": "#a460ed" });
     } else if (bx == 6) {
         $(".tab").css({ "color": "#fff" });
-        $(".tab_7").css({ "color": "red" });
+        $(".tab_7").css({ "color": "#a460ed" });
     } else if (bx == 7) {
         $(".tab").css({ "color": "#fff" });
-        $(".tab_8").css({ "color": "red" });
+        $(".tab_8").css({ "color": "#a460ed" });
     } else if (bx == 8) {
         $(".tab").css({ "color": "#fff" });
-        $(".tab_9").css({ "color": "red" });
+        $(".tab_9").css({ "color": "#a460ed" });
     }
 
     if (bx >= horizon) {
@@ -87,6 +87,11 @@ $(".wireframe img").mouseover(function () {
     $(".wire h6").stop().fadeIn(300);
 }).mouseout(function () {
     $(".wire h6").stop().fadeOut(100);
+});
+$(".detail_document img").mouseover(function () {
+    $(".detail_docu h6").stop().fadeIn(300);
+}).mouseout(function () {
+    $(".detail_docu h6").stop().fadeOut(100);
 });
 
 // project image hover effect
