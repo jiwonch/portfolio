@@ -124,16 +124,22 @@
   height: 70%;
   position: relative;
   margin-right: 50px;
+  padding-bottom: 10%;
 }
 
 canvas {
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 90%;
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
 }
 
 .copy {
   position: absolute;
-  top: 10%;
+  top: 55%;
+  transform: translateY(-50%);
   left: 5%;
   width: 100%;
   height: 100%;
@@ -146,10 +152,10 @@ canvas {
 }
 
 .copy #my_photo {
-  width: 380px;
-  height: 500px;
+  width: 45%;
+  height: 55%;
+  margin: 0 auto;
   border-radius: 50%;
-  background-color: #383838;
+  background-color: rgba(56, 56, 56, 0.7);
   z-index: 90;
-  border: 1px solid red;
 }

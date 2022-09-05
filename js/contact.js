@@ -5,9 +5,9 @@ const ctx = el.getContext('2d');
 const dpr = window.devicePixelRatio || 1;
 const pi = Math.PI;
 const points = 12;
-const radius = 280 * dpr;
-const h = 800 * dpr;
-const w = 750 * dpr;
+const radius = 200 * dpr;
+const h = 650 * dpr;
+const w = 550 * dpr;
 const center = {
     x: w / 2 * dpr,
     y: h / 2 * dpr
