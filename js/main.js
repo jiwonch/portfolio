@@ -260,10 +260,10 @@ function typi() {
         tpele2.classList.add("csor");
         setTimeout(function () {
           inter2 = setInterval(typi2, 100);
-        },300);
-      },200);
-    },300);
-  } 
+        }, 300);
+      }, 200);
+    }, 300);
+  }
 }
 
 function typi2() {
@@ -288,10 +288,10 @@ function typi2() {
         tpele3.classList.add("csor");
         setTimeout(function () {
           inter3 = setInterval(typi3, 100);
-        },300);
-      },200);
-    },300);
-  } 
+        }, 300);
+      }, 200);
+    }, 300);
+  }
 }
 
 function typi3() {
@@ -316,10 +316,10 @@ function typi3() {
         tpele4.classList.add("csor");
         setTimeout(function () {
           inter4 = setInterval(typi4, 100);
-        },300);
-      },200);
-    },300);
-  } 
+        }, 300);
+      }, 200);
+    }, 300);
+  }
 }
 
 function typi4() {
@@ -334,7 +334,6 @@ function typi4() {
     }
   } else {
     clearInterval(inter4);
-  } 
+  }
 }
-
 

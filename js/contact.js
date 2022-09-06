@@ -47,8 +47,8 @@ for (var idx = 0; idx <= gradients.length - 1; idx++) {
     let swingpoints = [];
     let radian = 0;
 
-    for (var i = 0; i < points; i++) {
-        radian = pi * 2 / points * i;
+    for (var u = 0; u < points; u++) {
+        radian = pi * 2 / points * u;
         var ptX = center.x + radius * Math.cos(radian);
         var ptY = center.y + radius * Math.sin(radian);
         swingpoints.push({
@@ -73,18 +73,18 @@ function swingCircle() {
     for (let k = 0; k < circles.length; k++) {
         let swingpoints = circles[k];
 
-        for (var i = 0; i < swingpoints.length; i++) {
-            swingpoints[i].phase += random(1, 10) * -0.01;
+        for (var u = 0; u < swingpoints.length; u++) {
+            swingpoints[u].phase += random(1, 10) * -0.01;
             let phase = 4 * Math.sin(tick / 65);
 
             if (mouseY !== 0) {
                 phase = mouseY / 200 + 1;
             }
 
-            var r = radius + swingpoints[i].range * phase * Math.sin(swingpoints[i].phase) - rangeMax;
-            swingpoints[i].radian += pi / 360;
-            var ptX = center.x + r * Math.cos(swingpoints[i].radian);
-            var ptY = center.y + r * Math.sin(swingpoints[i].radian);
+            var r = radius + swingpoints[u].range * phase * Math.sin(swingpoints[u].phase) - rangeMax;
+            swingpoints[u].radian += pi / 360;
+            var ptX = center.x + r * Math.cos(swingpoints[u].radian);
+            var ptY = center.y + r * Math.sin(swingpoints[u].radian);
 
             if (showPoints === true) {
                 ctx.strokeStyle = '#96fbc4';
@@ -94,12 +94,12 @@ function swingCircle() {
                 ctx.stroke();
             }
 
-            swingpoints[i] = {
+            swingpoints[u] = {
                 x: ptX,
                 y: ptY,
-                radian: swingpoints[i].radian,
-                range: swingpoints[i].range,
-                phase: swingpoints[i].phase
+                radian: swingpoints[u].radian,
+                range: swingpoints[u].range,
+                phase: swingpoints[u].phase
             };
         }
 
@@ -118,8 +118,8 @@ function drawCurve(pts, fillStyle) {
     ctx.beginPath();
     ctx.moveTo((pts[cycle(-1, points)].x + pts[0].x) / 2, (pts[cycle(-1, points)].y + pts[0].y) / 2);
 
-    for (var i = 0; i < pts.length; i++) {
-        ctx.quadraticCurveTo(pts[i].x, pts[i].y, (pts[i].x + pts[cycle(i + 1, points)].x) / 2, (pts[i].y + pts[cycle(i + 1, points)].y) / 2);
+    for (var u = 0; u < pts.length; u++) {
+        ctx.quadraticCurveTo(pts[u].x, pts[u].y, (pts[u].x + pts[cycle(u + 1, points)].x) / 2, (pts[u].y + pts[cycle(u + 1, points)].y) / 2);
     }
 
     ctx.closePath();
