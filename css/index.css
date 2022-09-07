@@ -471,9 +471,28 @@ table {
     align-items: center;
 }
 
+#home_ca{
+    position: absolute;
+    top: 75%;
+    left: 1%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#home_ca p{
+    color: #616060;
+    font-size: 15px;
+    transform: rotate(-90deg);
+    font-weight: bold;
+}
+
 #home_ct a{
     color:#fff;
     font-size: 20px;
+    font-weight: bold;
     transform: rotate(-90deg);
 }
 

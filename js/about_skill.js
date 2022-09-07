@@ -161,35 +161,110 @@ var accIcon = document.querySelectorAll('.accIcon');
 // event
 accordionBtn.forEach(function (el) {
     el.addEventListener('click', toggleAccordion)
+
 });
 
 // accordion toggle
 function toggleAccordion(el) {
-   var targetText = el.currentTarget.nextElementSibling.classList;
-   var targetAccIcon = el.currentTarget.children[0];
-   var target = el.currentTarget;
-   
-   if (targetText.contains('show')) {
-       targetText.remove('show');
-       targetAccIcon.classList.remove('anime');
-       target.classList.remove('accordionTitleActive');
-   } 
-   else {
-      accordionBtn.forEach(function (el) {
-         el.classList.remove('accordionTitleActive');
-         
-         allTexts.forEach(function (el) {
-            el.classList.remove('show');
-         })
-         
-         accIcon.forEach(function (el) {
-          el.classList.remove('anime');
-         }) 
-         
-      })
-      
-         targetText.add('show');
-         target.classList.add('accordionTitleActive');
-         targetAccIcon.classList.add('anime');
-   }  
+    var targetText = el.currentTarget.nextElementSibling.classList;
+    var targetAccIcon = el.currentTarget.children[0];
+    var target = el.currentTarget;
+
+    if (targetText.contains('show')) {
+        targetText.remove('show');
+        targetAccIcon.classList.remove('anime');
+        target.classList.remove('accordionTitleActive');
+        $("#my_text").show();
+    }
+    else {
+        accordionBtn.forEach(function (el) {
+            el.classList.remove('accordionTitleActive');
+
+            allTexts.forEach(function (el) {
+                el.classList.remove('show');
+                $("#my_text").hide();
+            })
+
+            accIcon.forEach(function (el) {
+                el.classList.remove('anime');
+            })
+
+        })
+
+        targetText.add('show');
+        target.classList.add('accordionTitleActive');
+        targetAccIcon.classList.add('anime');
+    }
+
 }
+
+// $(document).ready(function(){
+//     var opa = $(".show").css("opacity");
+
+//     if(opa == 1){
+//         $("#my_text").hide();
+//     } else if(opa == 0){
+//         $("#my_text").show();
+//     }
+// });
+
+const parl_p1 = document.querySelector('.parel_1');
+const parl_p2 = document.querySelector('.parel_2');
+const parl_p3 = document.querySelector('.parel_3');
+const parl_p4 = document.querySelector('.parel_4');
+
+const txt_p1 = 'CHOIJIWON PORTFOLIO CHOIJIWON PORTFOLIO CHOIJIWON PORTFOLIO'.split(' ');
+const txt_p2 = "Hello, I'm a frontend developer who is both cautious and challenging. Hello, I'm a frontend developer who is both cautious and challenging.".split(' ');
+const txt_p3 = "I always want to be a person who is not afraid of trying. I always want to be a person who is not afraid of trying.".split(' ');
+const txt_p4 = 'I can communicate with other people smoothly. I can communicate with other people smoothly. '.split(' ');
+
+let p_ct1 = 0;
+let p_ct2 = 0;
+let p_ct3 = 0;
+let p_ct4 = 0;
+
+initTexts(parl_p1, txt_p1);
+initTexts(parl_p2, txt_p2);
+initTexts(parl_p3, txt_p3);
+initTexts(parl_p4, txt_p4);
+
+function initTexts(element, txt_p) {
+    txt_p.push(...txt_p);
+    for (let m =0; m < txt_p.length; m++) {
+        element.innerText += `${txt_p[m]}\u00A0\u00A0\u00A0\u00A0`;
+    }
+}
+
+function mqT(p_ct, element, direction) {
+    if(p_ct > element.scrollWidth / 2) {
+        element.style.transform = `translate3d(0, 0, 0)`;
+        p_ct = 0;
+    }
+    element.style.transform = `translate3d(${direction * p_ct}px, 0, 0)`;
+
+    return p_ct;
+}
+
+function anm() {
+    p_ct1++;
+    p_ct2++;
+    p_ct3++;
+    p_ct4++;
+
+    p_ct1 = mqT(p_ct1, parl_p1, -1);
+    p_ct2 = mqT(p_ct2, parl_p2, 1);
+    p_ct3 = mqT(p_ct3, parl_p3, -1);
+    p_ct4 = mqT(p_ct4, parl_p4, 1);
+
+    window.requestAnimationFrame(anm)
+}
+
+function scrollHandler() {
+    p_ct1 += 15
+    p_ct2 += 15
+    p_ct3 += 15
+    p_ct4 += 15
+}
+
+window.addEventListener('scroll', scrollHandler)
+anm();

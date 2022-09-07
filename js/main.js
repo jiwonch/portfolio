@@ -1,16 +1,16 @@
 // 인트로 화면 로딩 애니메이션
 $(function () {
-  var loading = $('#loader'),
-    enterButton = loading.find('.enter_button');
+  var loading = $('#loader');
+  //   enterButton = loading.find('.enter_button');
 
   setTimeout(function () {
     loading.removeClass('hidden_loader');
   }, 100);
 
-  enterButton.on('click', function (e) {
-    e.preventDefault();
-    loading.addClass('hidder_loader').slideUp();
-  })
+  // enterButton.on('click', function (e) {
+  //   e.preventDefault();
+  //   loading.addClass('hidder_loader').slideUp();
+  // })
 })
 
 
@@ -260,9 +260,9 @@ function typi() {
         tpele2.classList.add("csor");
         setTimeout(function () {
           inter2 = setInterval(typi2, 100);
-        }, 300);
-      }, 200);
-    }, 300);
+        }, 100);
+      }, 100);
+    }, 100);
   }
 }
 
@@ -288,9 +288,9 @@ function typi2() {
         tpele3.classList.add("csor");
         setTimeout(function () {
           inter3 = setInterval(typi3, 100);
-        }, 300);
-      }, 200);
-    }, 300);
+        }, 100);
+      }, 100);
+    }, 100);
   }
 }
 
@@ -316,9 +316,9 @@ function typi3() {
         tpele4.classList.add("csor");
         setTimeout(function () {
           inter4 = setInterval(typi4, 100);
-        }, 300);
-      }, 200);
-    }, 300);
+        }, 100);
+      }, 100);
+    }, 100);
   }
 }
 

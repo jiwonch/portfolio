@@ -102,14 +102,14 @@ body {
     font-family: 'Courgette', cursive;
     text-align: center;
     font-size: 3.0em;
-    margin-top: 2%;
+    margin-top: 1%;
     letter-spacing: 0.2em;
 }
 
 .project_box {
     width: 1300px;
     height: 65%;
-    margin: 50px auto 20px;
+    margin: 3% auto 20px;
     border: 1px solid #fff;
     border-radius: 10px;
     display: flex;

@@ -78,11 +78,11 @@ ul {
 
 .accordionTitle:before {
   width: 100%;
-  background-color: #c9d6df;
+  background-color: rgb(234, 229, 238);
 }
 
 .accordionTitle:after {
-  background-image: linear-gradient(90deg, #a460ed, #c9d6df);
+  background-image: linear-gradient(90deg, #a460ed, rgb(234, 229, 238));
   width: 0%;
 }
 
@@ -105,7 +105,7 @@ ul {
 }
 
 .accordionTitleActive:after {
-  background-image: linear-gradient(90deg, #a460ed, #c9d6df);
+  background-image: linear-gradient(90deg, #a460ed, rgb(234, 229, 238));
   width: 100%;
 }
 
@@ -125,7 +125,7 @@ ul {
   content: "";
   position: absolute;
   border-radius: 50px;
-  background-color: #c9d6df;
+  background-color: rgb(234, 229, 238);
   transition: ease 0.3s all;
 }
 
@@ -159,7 +159,7 @@ ul {
   font-weight: 400;
   transition: all 0.6s cubic-bezier(0.42, 0.2, 0.08, 1);
   overflow: hidden;
-  background-color: #f0f5f9;
+  background-color: rgb(234, 229, 238);
   letter-spacing: 0.5px;
 }
 
