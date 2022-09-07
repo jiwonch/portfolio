@@ -8,12 +8,16 @@
     <title>JIWON(PROJECT)</title>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/project_bundle.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
     <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </head>
 
 <body>
+    <canvas id="cursor_canvas"></canvas>
     <section class="project">
         <div class="box" id="box1">
             <h1>HOLLYS COFFEE</h1>
@@ -109,7 +113,7 @@
                     </div>
                 </div>
                 <div class="project_content">
-                    <h3>리디북스 <span>#CLONE</span></h3>
+                    <h3>리디북스 <span>#openAPI&nbsp; #AJAX</span></h3>
                     <div class="pj_color">
                         <div id="pj2_mc1" class="pj_c"></div>
                         <p>#1E9EFF</p>
@@ -526,7 +530,7 @@
     </div>
 
     <div id="gotab">
-        <a href="index.html" class="fixed">
+        <a href="main.html" class="fixed">
             <img src="img/home.png" alt="home">
             <p>HOME</p>
         </a>
@@ -539,6 +543,7 @@
 
     <!-- js 연결 -->
     <script src="js/project_bundle.js"></script>
+    <script src="js/cursor.js"></script>
 </body>
 
 </html>

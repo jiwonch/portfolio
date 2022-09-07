@@ -460,6 +460,14 @@ table {
     font-size: 25px;
 }
 
+#contact_myimg_home p {
+    font-size: 14px;
+    color: #616060;
+    font-family: 'Courgette', cursive;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
 #home_ct{
     position: absolute;
     top: 5%;
