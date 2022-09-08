@@ -268,3 +268,26 @@ function scrollHandler() {
 
 window.addEventListener('scroll', scrollHandler)
 anm();
+
+// skill 나타나기
+$(document).ready(function(){
+    $('#front, #back, #etc, #tool').css({opacity:0});
+
+    $(window).scroll(function(){
+        var vw = $(this).scrollTop();
+
+        if(vw >= 1318) {
+            $('#front').animate({opacity:1}, 1000);
+        }
+        if(vw >= 1918) {
+            $('#back').animate({opacity:1}, 1000);
+        }
+        if(vw >= 2610) {
+            $('#etc').animate({opacity:1}, 1000);
+        }
+        if(vw >= 3118) {
+            $('#tool').animate({opacity:1}, 1000);
+        }
+    })
+});
+

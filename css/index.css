@@ -63,12 +63,13 @@ table {
 
 /* 인트로 화면 */
 #loader{
-    position: absolute;
+    /* position: absolute; */
+    content: '';
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #000;
+    /* top: 0; */
+    /* left: 0; */
+    background-color: hsla(0, 0%, 0%, 1);
     overflow: hidden;
     z-index: 50;
 }
@@ -78,6 +79,7 @@ table {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 5000;
 }
 
 .loader_text li{
@@ -451,6 +453,12 @@ table {
     border: 1px solid blue;
     border-radius: 50%;
 } */
+
+#my_photo {
+    background-image: url(../img/jiwon.jpg);
+    background-position: center;
+    background-size: contain;
+}
 
 #contact_myimg_home h3{
     font-family: 'Courgette', cursive;

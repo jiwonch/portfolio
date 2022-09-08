@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="common.css"> -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    <meta http-equiv="refresh" content="5; url=./main.html">
+    <meta http-equiv="refresh" content="4; url=./main.html">
     <title>jiwon portfolio</title>
 </head>
+
 <body>
     <div id="loader" class="hidden_loader">
+
+        <canvas id="canvas_loading"></canvas>
         <div class="loader_wrap">
             <ul class="loader_text">
                 <li>W</li>
@@ -21,11 +26,13 @@
                 <li>M</li>
                 <li>E</li>
             </ul>
-            <a href="#" class="enter_button">JIWON 포트폴리오 ENTER</a>
+            <div class="enter_button">JIWON'S PORTFOLIO ENTER</div>
         </div>
     </div>
 
     <!-- script -->
-    <script src="./js/main.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
+    <script src="js/loading_particle.js"></script>
 </body>
+
 </html>

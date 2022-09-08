@@ -1,17 +1,3 @@
-// 인트로 화면 로딩 애니메이션
-$(function () {
-  var loading = $('#loader');
-  //   enterButton = loading.find('.enter_button');
-
-  setTimeout(function () {
-    loading.removeClass('hidden_loader');
-  }, 100);
-
-  // enterButton.on('click', function (e) {
-  //   e.preventDefault();
-  //   loading.addClass('hidder_loader').slideUp();
-  // })
-})
 
 
 // main 배경 색 gradient 변경
