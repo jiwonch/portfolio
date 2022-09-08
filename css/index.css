@@ -456,8 +456,9 @@ table {
 
 #my_photo {
     background-image: url(../img/jiwon.jpg);
-    background-position: center;
-    background-size: contain;
+    background-position:  top right;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #contact_myimg_home h3{
